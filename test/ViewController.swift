@@ -15,10 +15,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     
     
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Tip Calculator";
+        
+      
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("View appeared or something")
+        //let testTip1 = UserDefaults.standard.string(forKey: "Tip1")
+        tipControl.setTitle("15%", forSegmentAt: 0)
+        //let testTip2 = UserDefaults.standard.string(forKey: "Tip2")
+        tipControl.setTitle("18%", forSegmentAt: 1)
+        //let testTip3 = UserDefaults.standard.string(forKey: "Tip3")
+        tipControl.setTitle("20%", forSegmentAt: 2)
+        
     }
 
     @IBAction func calculateTip(_ sender: Any) {
