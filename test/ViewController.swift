@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         
         tipAmountLabel.text = String(format: "$%.2f", tip);
         totalLabel.text = String(format: "$%.2f", total);
+        
+        //this will be used purely to see if uploads work correctly
     }
     
     
