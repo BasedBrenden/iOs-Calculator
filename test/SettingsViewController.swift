@@ -23,21 +23,23 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     @IBAction func tip1Change(_ sender: Any) {
-        let newAmount:String = tip1Input.text!;
+        let newAmount = Double(tip1Input.text!);
         UserDefaults.standard.setValue(newAmount, forKey:"Tip1");
         //whaaa
     }
     
 
     @IBAction func tip2Change(_ sender: Any) {
-        let newAmount:String = tip2Input.text!;
+        let newAmount = Double(tip2Input.text!);
         UserDefaults.standard.setValue(newAmount, forKey:"Tip2");
     }
     
     
     @IBAction func tip3Change(_ sender: Any) {
-        let newAmount:String = tip3Input.text!;
+        let newAmount = Double(tip3Input.text!);
         UserDefaults.standard.setValue(newAmount, forKey: "Tip3");
     }
     
